@@ -50,9 +50,11 @@ void MazeSolve(int sx, int sy, int ex, int ey)
     while (std::cin >> op) {
         if (op == 1) {
             Dfs_Solve_Maze(sx, sy, ex, ey);
+            printPath();
         }
         if (op == 2) {
             Bfs_Solve_Maze(sx, sy, ex, ey);
+            printPath();
         }
         break;
     }

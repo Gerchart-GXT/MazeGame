@@ -1,5 +1,5 @@
 #include "radam&connect.h"
-#include <stdlib.h>
+#include <cstdlib>
 void printMap(Adjacentlist (*head)[M])
 {
     // 这里用Adjacentlist来重新构图

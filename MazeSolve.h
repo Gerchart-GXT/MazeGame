@@ -1,6 +1,6 @@
 #include "MazeBuild.h"
 #include <cstdio>
-#include <unistd.h>
+// #include <unistd.h>
 int dtx[] = { -1, 0, 1, 0 }, dty[] = { 0, 1, 0, -1 };
 int dir[M][M];
 bool visited[M][M];
@@ -53,8 +53,8 @@ void Dfs_Solve_Maze(int sx, int sy, int ex, int ey)
             for (int j = 0; j <= top; j++) {
                 auto t = stack[j];
                 visited[t.fi][t.se] = 1;
-                printPath();
-                usleep(100000);
+                // printPath();
+                // usleep(100000);
             }
             return;
         }
@@ -94,8 +94,8 @@ void Bfs_Solve_Maze(int sx, int sy, int ex, int ey)
                 for (int j = idx; j > 0; j--) {
                     auto t = ans[j];
                     visited[t.fi][t.se] = 1;
-                    printPath();
-                    usleep(100000);
+                    // printPath();
+                    // usleep(100000);
                 }
                 return;
             }
