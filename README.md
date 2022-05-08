@@ -9,6 +9,7 @@
     * 随机周围一个不在集合的点
     * 将相邻的点进行连接
 3. `MazeBuild.h`
+    * 四种迷宫生成算法
     ```cpp
     //根据邻接表来打印Map
     void printMap(Adjacentlist (*head)[M]);
@@ -22,6 +23,7 @@
     void recursiveSegment_Build_Maze(Adjacentlist (*head)[M], int x1, int y1, int x2, int y2);
     ```
 4. `MazeSolve.h`
+    * 两种迷宫求解方法
     ```cpp
     //用栈来深搜，对于每个点定义一个联通方向向量——（0，1，2，3对应dtx，dty），当该点不能被拓展时证明该路径为死路，依次出栈，最后的栈内元素就是路径
     void Dfs_Solve_Maze(int sx, int sy, int ex, int ey）;
